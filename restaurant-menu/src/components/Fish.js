@@ -3,8 +3,7 @@ import {formatPrice} from '../helpers'
 
 class Fish extends React.Component{
     render(){
-        const details = this.props.details;
-        const index = this.props.index;
+        const {details, index} = this.props;
         const isAvailable = details.status === 'available'
         const buttonText = isAvailable ? 'Add to Order' : 'Sold Out';
 
